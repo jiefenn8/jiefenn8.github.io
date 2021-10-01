@@ -44,6 +44,10 @@ code {
     font-weight: normal;
 }
 
+.portrait {
+    margin: 15px;
+}
+
 .icon-text {
     display: flex;
     justify-content: center;
