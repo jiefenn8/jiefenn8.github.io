@@ -4,7 +4,9 @@ html {
 }
 
 header {
-    padding-top: 100px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 10px;
 }
 
 body {
@@ -12,8 +14,12 @@ body {
     padding: 60px 15px 0;
 }
 
+p {
+    padding-bottom: 10px;
+}
+
 footer {
-        position: absolute;
+    position: absolute;
     bottom: 0;
     width: 100%;
     line-height: 60px;
@@ -29,4 +35,18 @@ code {
 #portrait {
     float: left;
     margin: 20px;
+}
+
+.skill-tag {
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.icon-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
 }
