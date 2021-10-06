@@ -2,7 +2,7 @@
 
 The code respository for my portfolio site. 
 
-[![Download](https://img.shields.io/github/downloads/jiefenn8/jiefenn8.github.io/total)](https://github.com/jiefenn8/jiefenn8.github.io/releases/latest) 
+[![Release](https://img.shields.io/github/v/release/jiefenn8/jiefenn8.github.io)](https://github.com/jiefenn8/jiefenn8.github.io/releases/latest)
 
 ## Description
 
