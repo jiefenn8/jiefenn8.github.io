@@ -194,8 +194,9 @@
       </div><!-- End of third row div -->
       <hr>
       <div class="text-center">
-        <a class="btn btn-info" href="" role="button">Back Top</a>
-        <a class="btn btn-info" href="contact.html" role="button">Contact Me</a>
+        <!-- https://stackoverflow.com/questions/15935318/smooth-scroll-to-top -->
+        <button class="btn btn-info" onclick="window.scrollTo({top:0, behavior:'smooth'})">Back Top</button>
+        <button class="btn btn-info" onclick="window.location='contact.html';">Contact Me</button>
       </div><!-- End of center button div -->
       <br>
     </main> <!-- End of main -->
