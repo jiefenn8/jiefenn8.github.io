@@ -52,3 +52,13 @@ code {
     align-items: center;
     font-size: 26px;
 }
+
+.footer-nav a {
+    color: grey;
+    padding-left: 15px;
+}
+
+.footer-nav svg {
+    display: inline-block;
+    vertical-align: middle;
+}
