@@ -1,3 +1,5 @@
+/* Website main styling */
+
 html {
     position: relative;
     min-height: 100%
@@ -61,4 +63,112 @@ code {
 .footer-nav svg {
     display: inline-block;
     vertical-align: middle;
+}
+
+/* Contact form styling */
+/* Base code adopted from https://formspree.io/library/simple-contact-form/ */
+
+/* reset */
+#contact-form
+ input,
+#contact-form
+ select,
+#contact-form
+ textarea,
+#contact-form
+ fieldset,
+#contact-form
+ optgroup,
+#contact-form
+ label,
+#contact-form
+ #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#contact-form
+ label,
+#contact-form
+ legend,
+#contact-form
+ ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#contact-form
+input,
+#contact-form
+ select,
+#contact-form
+ textarea,
+#contact-form
+ #card-element {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#contact-form
+input:focus,
+#contact-form
+ select:focus,
+#contact-form
+ textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+
+#contact-form
+ [type="text"],
+#contact-form
+ [type="email"] {
+  width: 100%;
+}
+
+#contact-form
+ [type="button"],
+#contact-form
+ [type="submit"],
+#contact-form
+ [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+#contact-form
+ [type="button"]:focus,
+#contact-form
+ [type="submit"]:focus,
+#contact-form
+ [type="reset"]:focus {
+  outline: none;
+}
+
+#contact-form
+ [type="submit"],
+#contact-form
+ [type="reset"] {
+  margin-bottom: 0;
 }
