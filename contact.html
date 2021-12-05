@@ -85,7 +85,7 @@
 					</div><!-- End of icon div -->
 					<br>
 					<p>
-						Got any questions or want to start a conversation with me? Send an email!
+						Got any questions for me? Send a message via email or just fill the contact form below!
 					</p>
 					<a href="mailto:javenliu43@outlook.com"  target="_blank" class="btn btn-info">javenliu43@outlook.com</a>
 				</div><!-- End of email div -->
@@ -93,9 +93,10 @@
 		</div><!-- End of row div -->
 		<!-- Start of Formspree contact form -->
 		<div class="d-flex justify-content-center">
-			<div class="w-75 p-3 my-5 border">
+			<div id="contact-form-container" class="w-75 p-3 my-5 border text-center"> 
 				<form id="contact-form" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mknywqnb" method="post">
 					<fieldset id="contact-form-inputs">
+					<h4>Contact Form</h4>
 					<label for="full-name">Full Name</label>
 					<input type="text" name="name" id="full-name" placeholder="First and Last" required="">
 					<label for="email-address">Email Address</label>
@@ -105,10 +106,10 @@
 					<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 					</fieldset>
 					<input id="contact-form-button" type="submit" value="Submit">
-					<p id="contact-form-status"></p>
 				</form>
-			</div>
-		</div><!-- End of Formspree contact form -->
+				<p class="h5 pt-3" id="contact-form-status"></p>
+			</div><!-- End of Formspree contact form -->
+		</div><!-- Contact form alignment div -->
 	</main>
     <!-- https://getbootstrap.com/docs/4.0/examples/sticky-footer/ -->
     <footer class="footer">
@@ -130,13 +131,13 @@
 			</a>
 		  </div><!-- End of footer nav div-->
 		</div><!-- End of container div -->
-	  </footer>
-
-	  <!-- Formspree form submission script -->
-	  <!-- Submits form and notify user of success or failure -->
-	  <!-- Base of Formspree integration AJAX example -->
+	</footer>
+	<!-- Formspree form submission script -->
+	<!-- Submits form and notify user of success or failure -->
+	<!-- Base on Formspree integration AJAX example with some modifications -->
 	<script>
 		var form = document.getElementById("contact-form");
+		var container = document.getElementById("contact-form-container")
 		
 		async function handleSubmit(event) {
 		  event.preventDefault();
@@ -149,10 +150,14 @@
 				'Accept': 'application/json'
 			}
 		  }).then(response => {
-			status.innerHTML = "Thanks for your submission!";
+			form.hidden = true;
+			status.innerHTML = "Thank you for your message!";
+			container.classList.add("border-success");
 			form.reset()
 		  }).catch(error => {
-			status.innerHTML = "Oops! There was a problem submitting your form"
+			form.hidden = true;
+			status.innerHTML = "Oops! There was a problem submitting your form."
+			container.classList.add("border-danger")
 		  });
 		}
 		form.addEventListener("submit", handleSubmit)
