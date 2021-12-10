@@ -1,0 +1,139 @@
+/* Website main styling */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+header {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 10px;
+}
+
+body {
+	margin-bottom: 60px;
+}
+
+p {
+	padding-bottom: 10px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #f5f5f5;
+}
+
+code {
+	font-size: 80%;
+}
+
+#portrait {
+	float: left;
+	margin: 20px;
+}
+
+.skill-tag {
+	font-size: 16px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+.portrait {
+	margin: 15px;
+}
+
+.icon-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+}
+
+.footer-nav a {
+	color: grey;
+	padding-left: 15px;
+}
+
+.footer-nav svg {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* Contact form styling */
+/* Base code adopted from https://formspree.io/library/simple-contact-form/ */
+
+#contact-form input,
+#contact-form textarea,
+#contact-form label,
+#card-element:disabled {
+	font-family: inherit;
+	font-size: 100%;
+	color: inherit;
+	border: none;
+	border-radius: 0;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+#contact-form label,
+#contact-form legend,
+#contact-form ::placeholder {
+	font-size: 0.825rem;
+	margin-bottom: 0.5rem;
+	padding-top: 0.2rem;
+	display: flex;
+	align-items: baseline;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#card-element {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 0.75em 1rem;
+	margin-bottom: 1.5rem;
+}
+
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+	background-color: white;
+	outline-style: solid;
+	outline-width: thin;
+	outline-color: gray;
+	outline-offset: -1px;
+}
+
+#contact-form [type="text"],
+#contact-form [type="email"] {
+	width: 100%;
+}
+
+#contact-form [type="button"],
+#contact-form [type="submit"] {
+	width: auto;
+	cursor: pointer;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+}
+
+#contact-form [type="button"]:focus,
+#contact-form [type="submit"]:focus {
+	outline: none;
+}
+
+#contact-form [type="submit"] {
+	margin-bottom: 0;
+}
