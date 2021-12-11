@@ -141,38 +141,10 @@
 			</div>
 			<!-- End of container div -->
 		</footer>
-		<!-- Formspree form submission script -->
-		<!-- Submits form and notify user of success or failure -->
-		<!-- Base on Formspree integration AJAX example with some modifications -->
-		<script>
-			var form = document.getElementById("contact-form");
-			var container = document.getElementById("contact-form-container");
-
-			async function handleSubmit(event) {
-				event.preventDefault();
-				var status = document.getElementById("contact-form-status");
-				var data = new FormData(event.target);
-				fetch(event.target.action, {
-					method: form.method,
-					body: data,
-					headers: {
-						Accept: "application/json",
-					},
-				})
-					.then((response) => {
-						form.hidden = true;
-						status.innerHTML = "Thank you for your message!";
-						container.classList.add("border-success");
-						form.reset();
-					})
-					.catch((error) => {
-						form.hidden = true;
-						status.innerHTML = "Oops! There was a problem submitting your form.";
-						container.classList.add("border-danger");
-					});
-			}
-			form.addEventListener("submit", handleSubmit);
-		</script>
+		<!-- Formspree form post submission script -->
+		<!-- Handles the result of the submission and notify user of success or failure -->
+		<!-- Base on Formspree integration AJAX example with modifications -->
+		<script src="static/js/script.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<!-- https://getbootstrap.com/docs/4.0/getting-started/download/ -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
