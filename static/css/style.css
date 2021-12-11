@@ -19,6 +19,10 @@ p {
 	padding-bottom: 10px;
 }
 
+section a {
+	color: #007ac0;
+}
+
 footer {
 	position: absolute;
 	bottom: 0;
@@ -56,7 +60,7 @@ code {
 }
 
 .footer-nav a {
-	color: grey;
+	color: #474747;
 	padding-left: 15px;
 }
 
