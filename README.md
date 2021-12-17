@@ -34,7 +34,7 @@ I digitalised some of the planning I did on sketches with [Wireframe.cc](https:/
     - **Revision 1 (Initial draft)**
         - [Desktop](docs/wireframe/revision_1_layout.PNG)
         - [Mobile](docs/wireframe/revision_1_mobile.PNG)
-            - [With menu expanded.](docs/wireframe/revison_1_mobile_menu.PNG)
+            - [With menu expanded.](docs/wireframe/revision_1_mobile_menu.PNG)
     - **Revision 2** - Change in color theme, navbar left alignment and branding. The initial color contrast was a bit too strong so I opted for a more lighter color. Branding was also added to give a form of site identity/brand regardless what page the user is viewing.  
         - [Desktop](docs/wireframe/revision_2_layout.PNG)
         - [Mobile](docs/wireframe/revision_2_mobile.PNG) - The mobile burger menu icon has been altered to be right aligned. 
@@ -131,7 +131,7 @@ You can access my portfolio with the following link [jiefenn8.github.io](https:/
 
 - [Bootstrap responsive](https://getbootstrap.com/docs/4.0/components/navbar/#responsive-behaviors) for the website UX compatibility with multiple devices. 
 
-- [Bootstrap icons](https://icons.getbootstrap.com/icons) such as the LinkedIn, GitHub icons.
+- [Bootstrap icons](https://icons.getbootstrap.com/) such as the LinkedIn, GitHub icons.
 
 - [Bootstrap badge](https://getbootstrap.com/docs/4.0/components/badge/) for the skills badges.
 
